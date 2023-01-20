@@ -8,12 +8,12 @@ let mainFn = function () {
     console.log(user);
   }
 };
-mainFn();
+// mainFn();
 
 btn.addEventListener("click", function (e) {
   e.preventDefault();
   fetch(
-    "https://reqres.in/api/login?email=eve.holt@reqres.in&password=cityslicka",
+    `https://reqres.in/api/login?q=${mail.value}@reqres.in&password=${pascode.value}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -28,9 +28,9 @@ btn.addEventListener("click", function (e) {
       console.log(data);
       if (data) {
         localStorage.setItem("token", data.token);
-        mainFn();
+        // mainFn();
       }
     })
     .catch((err) => console.log(err.error));
-  mainFn();
-});
+    mainFn();
+  });
