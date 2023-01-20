@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/css/main.min.css" />
+    <title>Book Shelter</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand"
+            ><img src="./images/Group 193.png" alt=""
+          /></a>
+          <div class="search d-flex justify-content-center align-items-center">
+            <i class="bx bx-search"></i>
+            <input
+              class="flex-grow-1 input-i"
+              type="text"
+              placeholder="Search books"
+            />
+          </div>
+          <div class="d-flex gap-3">
+            <i class="bx fa-2x theme"></i>
+            <button class="btn btn-primary logout-btn">Logout</button>
+          </div>
+        </div>
+      </nav>
+      <section id="hero">
+        <div
+          class="d-flex justify-content-between align-items-center counts w-75"
+        >
+          <div class="txts">
+            Showing <span class="count">18</span> Result(s)
+          </div>
+          <div class="select-gr d-flex align-items-center rounded-3">
+            <i class="bx bx-calendar"></i>
+            <select name="sel" id="sel">
+              <option value="newest" selected>Order by newest</option>
+              <option value="relevance">Order by relevance</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <main class="d-flex justify-content-between">
+        <section id="books" class="w-25">
+          <div class="bookmarks">
+            <h3>Bookmarks</h3>
+            <p>If you don’t like to read, you haven’t found the right book</p>
+            <div class="saved"></div>
+          </div>
+        </section>
+        <section id="results" class="w-75 d-grid">
+          <div class="d-flex justify-content-center pb-5 cardsarea">
+          </div>
+          <div class="d-flex justify-content-center footer">
+            <article>
+              <button id="left-btn" class="rounded-2 border-0">
+                <i class="bx bx-left-arrow-alt"></i>
+              </button>
+              <button id="st" class="rounded-2 border-0"></button>
+              <button id="nd" class="rounded-2 border-0"></button>
+              <button id="mid" class="rounded-2 border-0"></button>
+              <button id="nn" class="rounded-2 border-0"></button>
+              <button id="tn" class="rounded-2 border-0"></button>
+              <button id="right-btn" class="rounded-2 border-0">
+                <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
