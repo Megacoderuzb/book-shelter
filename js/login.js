@@ -3,7 +3,7 @@ let pascode = document.querySelector("#exampleInputPassword1");
 let btn = document.querySelector(".form-submit");
 let mainFn = function () {
   let user = localStorage.getItem("token");
-  if (user) {
+  if (user !== undefined) {
     window.location.replace("./index.html");
     console.log(user);
   }
@@ -32,5 +32,5 @@ btn.addEventListener("click", function (e) {
       }
     })
     .catch((err) => console.log(err.error));
-    mainFn();
-  });
+  mainFn();
+});
