@@ -13,7 +13,7 @@ let mainFn = function () {
 btn.addEventListener("click", function (e) {
   e.preventDefault();
   fetch(
-    `https://reqres.in/api/login?q=${mail.value}@reqres.in&password=${pascode.value}`,
+    `https://reqres.in/api/login?q=${mail.value}&password=${pascode.value}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
